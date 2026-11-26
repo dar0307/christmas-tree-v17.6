@@ -224,7 +224,7 @@
     var wide = (W / H) > 1.15;
 
     cx = W / 2;
-    cy = H * (wide ? 0.585 : (W < 620 ? 0.578 : 0.545));
+    cy = H * (wide ? 0.605 : (W < 620 ? 0.578 : 0.545));
 
     tree.h = Math.min(H * (wide ? 0.66 : 0.72), 780);
     tree.r = tree.h * (wide ? 0.365 : 0.335);
@@ -436,7 +436,7 @@
 
     // 十字光刺
     var rays = 4;
-    var len = (52 + starPulse * 26) * s;
+    var len = (46 + starPulse * 22) * s;
     ctx.save();
     ctx.translate(sx, sy);
     for (var i = 0; i < rays; i++) {
